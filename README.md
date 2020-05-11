@@ -36,7 +36,7 @@ The result is a json file as following:
 ```
 ![Process Architecture](assets/mapping.png)
 
-Finally you can run the `play` script as:
+Finally you can run the `play` script as:  
 `python play.py -d labels/VIDEO.mp4.json -v video/VIDEO.mp4 -c COORDINATES_MAPPING.json -t 200`  
 Where `-t` identifies the threshold distance between objects.
 
