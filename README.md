@@ -26,8 +26,8 @@ You can pass an optional parameter to increase the frame rate as:
 To make the distance feature precise in case the video is not taken from a perpendicular top view you need to map the coordinate of the video with the coordinate of a plane.
 
 ## Mapping coordinates
-You can use the `map.py` file which creates a JSON file with mapping coordinates.
-Usage: `python map.py -v YOR_FILE.mp3` 
+You can use the `map.py` file which creates a JSON file with mapping coordinates.  
+Usage: `python map.py -v YOR_FILE.mp3`  
 Click with your mouse to create points, press `s` to save to a `coordinates.json` file or  press `q` to quit from the window.
 The result is a json file as following:
 ```
