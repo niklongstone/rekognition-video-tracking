@@ -18,9 +18,9 @@ In addition, in this sample the bounding box become red if its too close to anot
 Run the video detection process with:  
 `python detect_video.py -v ./VIDEO_PATH/YUR_VIDEO.mp4 -b S3_BUCKET_NAME`
 
-Play the video with:
+Play the video with:  
 `python play.py -v ./VIDEO_PATH/YUR_VIDEO.mp4 -d ./labels/YUR_VIDEO.mp4.json`  
-You can pass an optional parameter to increase the frame rate as: 
+You can pass an optional parameter to increase the frame rate as:  
 `python play.py -v ./VIDEO_PATH/YUR_VIDEO.mp4 -d ./labels/YUR_VIDEO.mp4.json -f 25`
 
 To make the distance feature precise in case the video is not taken from a perpendicular top view you need to map the coordinate of the video with the coordinate of a plane.
