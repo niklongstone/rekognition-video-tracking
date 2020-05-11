@@ -1,6 +1,7 @@
 import math
 import json
 import numpy as np
+import cv2
 
 def get_category(response, category='Person'):
     labels = response["Labels"]
@@ -28,7 +29,7 @@ def create_box(box, video_width, video_height):
     p1 = (int(left),int(top))
     p2 = (int(left + width), int(top + height))
     center = ((np.array(p1) + np.array(p2)) / 2).astype(int)
-    distance_from_origin = distance((0,0), center)
+    center[1] += height/2
     label = {'left': left, 'top': top, 'width': width, 'height':height, 'center': center, 'p1': p1, 'p2': p2}
     
     return label
@@ -47,5 +48,13 @@ def compute_boxes(data, video_width, video_height):
 
 def load_data(path):
     with open(path) as f:
-        data = json.load(f)
-    return data
+        
+        return json.load(f)
+
+
+def transform_perspective(point, hom):
+    point = np.array([point], dtype='float32')
+    point = np.array([point])
+    point = cv2.perspectiveTransform(point, hom)
+    
+    return point[0][0]
