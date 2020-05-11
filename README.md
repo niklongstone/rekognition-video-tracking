@@ -27,7 +27,7 @@ To make the distance feature precise in case the video is not taken from a perpe
 
 ## Mapping coordinates
 You can use the `map.py` file which creates a JSON file with mapping coordinates.  
-Usage: `python map.py -v YOR_FILE.mp3`  
+Usage: `python map.py -v YOR_VIDEO_FILE.mp4`  
 Click with your mouse to create points, press `s` to save to a `coordinates.json` file or  press `q` to quit from the window.
 The result is a json file as following:
 ```
