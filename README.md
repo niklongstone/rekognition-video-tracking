@@ -8,7 +8,7 @@ In addition, in this sample the bounding box become red if its too close to anot
 
 ## Prerequisites 
  - python 3.x
- - Aws account with correct rights and cli configuration
+ - [AWS account](https://aws.amazon.com/resources/create-account/) with correct rights and cli configuration
  
 ## Set up
  - clone the repository
