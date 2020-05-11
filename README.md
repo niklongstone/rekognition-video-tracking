@@ -4,6 +4,8 @@ This project uses Amazon Rekognition to get bounding boxes around detected objec
 The Rekognition response is then used to play the video and overlay the boxes.
 In addition, in this sample the bounding box become red if its too close to another box.
 
+![Process Architecture](assets/video_sample.png)
+
 ## Prerequisites 
  - python 3.x
  - Aws account with correct rights and cli configuration
